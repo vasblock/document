@@ -12,7 +12,7 @@ VAS钱包的Scheme为vaswallet
 
 > 其中授权回调域名配置规范为全域名，比如需要网页授权的域名为：www.vasblock.com，配置以后此域名下面的页面http://www.vasblock.com/music.html 、 http://www.vasblock.com/login.html 都可以进行授权操作。但http://pay.vasblock.com 、 http://music.vasblock.com 、 http://vasblock.com无法进行授权操作。
 >
-> 如果是手机H5发起的授权操作，只需填写安全回调域名。
+> 如果是手机H5发起的授权操作，scheme请填写http或者https,并填写安全回调域名。
 
 ​		接入方申请通过后将获得uuid,accessToken,rsaPrivate,rsaPublic(可在DAPP接入申请记录点击“查看详情”进行查看，如有疑问请发送邮件至vas.github@outlook.com或在github上留言)，作用将会在下面介绍。
 

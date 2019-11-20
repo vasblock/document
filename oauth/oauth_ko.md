@@ -12,7 +12,7 @@ VAS 지갑의 스커트는 vaswallet입니다
 
 > 승인 된 콜백 도메인 이름 구성 사양은 전체 도메인 이름입니다. 예를 들어, 웹 페이지 인증에 필요한 도메인 이름은 www.vasblock.com이고 도메인 이름의 다음 페이지는 http://www.vasblock.com/music.html, 로 구성됩니다. 승인은  http://www.vasblock.com/login.html 에서 수행 할 수 있습니다. 그러나 http://pay.vasblock.com, http://music.vasblock.com 및 http://vasblock.com은 권한 부여 작업을 수행 할 수 없습니다.
 >
-> 휴대폰 H5에서 시작한 인증 작업 인 경우 보안 콜백 도메인 이름을 입력하십시오.
+> 휴대 전화 H5에서 시작한 인증 작업 인 경우 체계 입력에서 http 또는 https를 입력하고 보안 콜백 도메인 이름을 입력하십시오.
 
 ​		액세스 응용 프로그램이 승인되면 uuid, accessToken, rsaPrivate, rsaPublic을 얻습니다 (DAPP 액세스 응용 프로그램 레코드에서 "세부 정보보기"를 클릭하십시오. 궁금한 사항이 있으면 vas.github@outlook.com으로 전자 메일을 보내거나 github에 메시지를 남겨주십시오. ), 역할은 아래에 소개됩니다.
 

@@ -12,7 +12,7 @@ The access party needs to fill in the relevant third-party application informati
 
 > The authorized callback domain name configuration specification is a full domain name. For example, the domain name required for webpage authorization is: www.vasblock.com, and the following page of the domain name is configured http://www.vasblock.com/music.html, http://www Authorization can be done at .vasblock.com/login.html. However, http://pay.vasblock.com, http://music.vasblock.com, and http://vasblock.com cannot perform authorization operations.
 >
-> If it is an authorization operation initiated by the mobile phone H5, just fill in the security callback domain name.
+> If it is the authorization operation initiated by the mobile phone H5, please fill in the http or https at the scheme input and fill in the security callback domain name.
 
 After the access application is approved, uuid, accessToken, rsaPrivate, rsaPublic will be obtained. (Click "View Details" in the DAPP access application record to view. If you have any questions, please send an email to vas.github@outlook.com or leave a message on github. ), the role will be introduced below.
 
