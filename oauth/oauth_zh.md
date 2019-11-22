@@ -221,7 +221,7 @@ vaswallet://%7B%22type%22:%20%22pay%22,%22appUuid%22:%20%228888-9999-1111-6666%2
 例如：
 
 ```
-vaswallet://{"type": "pay","appUuid": "8888-9999-1111-6666","orderId": "201911087855441","toAddr": "*********************","assetType": "VAS","amount": "0.001","callbackUrl": "https://localhost:8080/pay?orderId=201911087855441","description": "*****","signedContent": "*******",}
+vaspay://{"type": "pay","appUuid": "8888-9999-1111-6666","orderId": "201911087855441","toAddr": "*********************","assetType": "VAS","amount": "0.001","callbackUrl": "https://localhost:8080/pay?orderId=201911087855441","description": "*****","signedContent": "*******",}
 ```
 
 
