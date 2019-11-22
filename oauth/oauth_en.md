@@ -217,7 +217,7 @@ The access party needs to construct a URL QR code to scan the code by the wallet
 e.g.：
 
 ```
-vaswallet://{"type": "pay","appUuid": "8888-9999-1111-6666","orderId": "201911087855441","toAddr": "*********************","assetType": "VAS","amount": "0.001","callbackUrl": "https://localhost:8080/pay?orderId=201911087855441","description": "*****","signedContent": "*******",}
+vas://{"type": "pay","appUuid": "8888-9999-1111-6666","orderId": "201911087855441","toAddr": "*********************","assetType": "VAS","amount": "0.001","callbackUrl": "https://localhost:8080/pay?orderId=201911087855441","description": "*****","signedContent": "*******",}
 ```
 
 
