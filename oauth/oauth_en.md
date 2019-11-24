@@ -229,10 +229,10 @@ Use the rsaPrivate at the time of application to sign the amount of mount, asset
 Suppose the parameters to be signed are as follows:
 
 ```json
-{"appUuid":"uuidVal","orderId":"orderIdVal","toAddr":"toAddrVal","assetType":"assetTypeVal","amount":"amountVal","callbackUrl":"callbackUrlVal"}
+{"amount":"amountVal","appUuid":"uuidVal","assetType":"assetTypeVal","callbackUrl":"callbackUrlVal","orderId":"orderIdVal","toAddr":"toAddrVal"}
 ```
 
-##### 1. Arrange the parameters into a json structure in the order of amount, assetType, callbackUrl, orderId, toAddr, uuid.
+##### 1. Arrange the parameters into a json structure in the order of amount,appUuid,assetType,callbackUrl,orderId,toAddr.
 
 ##### 2. Use SHA1withRSA to sign the parameters. The signed content is BASE64 encoded as rsaContent.
 
