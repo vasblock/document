@@ -228,7 +228,7 @@ vaspay://{"type": "pay","appUuid": "8888-9999-1111-6666","orderId": "20191108785
 
 #### 签名算法
 
-使用申请时的rsaPrivate运用SHA1WithRSA算法对amount,assetType,callbackUrl,orderId,toAddr,uuid参数进行签名。
+使用申请时的rsaPrivate运用SHA1WithRSA算法对amount,appUuid,assetType,callbackUrl,orderId,toAddr参数进行签名。
 
 假设需签名的参数如下：
 
