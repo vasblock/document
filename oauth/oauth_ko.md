@@ -231,10 +231,10 @@ vaspay://{"type": "pay","appUuid": "8888-9999-1111-6666","orderId": "20191108785
 서명 될 매개 변수가 다음과 같다고 가정하십시오.
 
 ```json
-{"appUuid":"uuidVal","orderId":"orderIdVal","toAddr":"toAddrVal","assetType":"assetTypeVal","amount":"amountVal","callbackUrl":"callbackUrlVal"}
+{"amount":"amountVal","appUuid":"uuidVal","assetType":"assetTypeVal","callbackUrl":"callbackUrlVal","orderId":"orderIdVal","toAddr":"toAddrVal"}
 ```
 
-##### 1.amount, assetType, callbackUrl, orderId, toAddr, uuid 순서로 매개 변수를 json 구조로 배열하십시오.
+##### 1.amount,appUuid,assetType,callbackUrl,orderId,toAddr 순서로 매개 변수를 json 구조로 배열하십시오.
 
 ##### 2.이 매개 변수는 SHA1withRSA로 서명되고 서명 된 내용은 rsaContent로 BASE64로 인코딩됩니다.
 
