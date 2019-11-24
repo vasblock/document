@@ -226,7 +226,7 @@ vaspay://{"type": "pay","appUuid": "8888-9999-1111-6666","orderId": "20191108785
 
 #### 서명 알고리즘
 
-애플리케이션시 rsaPrivate를 사용하여 SHA1WithRSA 알고리즘을 사용하여 마운트 양, assetType, callbackUrl, orderId, toAddr, uuid에 서명하십시오.
+애플리케이션시 rsaPrivate를 사용하여 SHA1WithRSA 알고리즘을 사용하여 마운트 amount, appUuid,assetType, callbackUrl, orderId, toAddr에 서명하십시오.
 
 서명 될 매개 변수가 다음과 같다고 가정하십시오.
 
