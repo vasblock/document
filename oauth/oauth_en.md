@@ -224,7 +224,7 @@ vas://{"type": "pay","appUuid": "8888-9999-1111-6666","orderId": "20191108785544
 
 #### Signature algorithm
 
-Use the rsaPrivate at the time of application to sign the amount of mount, assetType, callbackUrl, orderId, toAddr, uuid using the SHA1WithRSA algorithm.
+Use the rsaPrivate at the time of application to sign the amount of amount,appUuid, assetType, callbackUrl, orderId, toAddr using the SHA1WithRSA algorithm.
 
 Suppose the parameters to be signed are as follows:
 
