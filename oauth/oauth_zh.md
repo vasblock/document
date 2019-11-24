@@ -233,10 +233,10 @@ vaspay://{"type": "pay","appUuid": "8888-9999-1111-6666","orderId": "20191108785
 假设需签名的参数如下：
 
 ```json
-{"appUuid":"uuidVal","orderId":"orderIdVal","toAddr":"toAddrVal","assetType":"assetTypeVal","amount":"amountVal","callbackUrl":"callbackUrlVal"}
+{"amount":"amountVal","appUuid":"uuidVal","assetType":"assetTypeVal","callbackUrl":"callbackUrlVal","orderId":"orderIdVal","toAddr":"toAddrVal"}
 ```
 
-##### 1.按照amount,assetType,callbackUrl,orderId,toAddr,uuid顺序将参数排成json结构。
+##### 1.按照amount,appUuid,assetType,callbackUrl,orderId,toAddr顺序将参数排成json结构。
 
 ##### 2.对参数使用SHA1withRSA进行签名，签名后的内容进行BASE64编码即为rsaContent。
 
