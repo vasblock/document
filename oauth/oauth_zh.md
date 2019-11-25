@@ -41,7 +41,7 @@ VAS钱包的Scheme为vaswallet
 | callbackUrl | schemeurl格式的回调地址，schemeurl后不能为空。必填。 例如：appscheme://login |
 | callbackType | 为0时,返回openCode将通过"?"或者"&"进行拼接。为1时openCode直接拼接在callbackUrl的最后  默认0 非必填 |
 | openCallBackType | platform未指定或platform为mobile时生效。<br />openCallBackType为0或空时,  钱包打开callbackurl应用。<br />openCallBackType为1时，   钱包向callbackurl发起http请求并最小化钱包。<br />非必填 |
-| platform | 调起钱包的终端。如果是手机内调用填写 mobile <br />如果是扫网页二维码填写web |
+| platform | 调起钱包的终端。如果是手机内调用填写 mobile <br />如果是扫网页二维码或者h5页面填写web |
 
 > 由于IOS系统不允许在scheme使用特殊符号，所以需要对JSON数据进行url编码
 >
