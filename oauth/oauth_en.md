@@ -236,7 +236,21 @@ Suppose the parameters to be signed are as follows:
 
 ##### 2. Use SHA1withRSA to sign the parameters. The signed content is BASE64 encoded as rsaContent.
 
-### 2. After the payment is completed, jump back to the original APP and notify the payment status in the background.
+### 2. Payment completed
+
+There are two ways to judge payment completion:
+
+#### 2.1 Judging from the transaction record of the receiving address
+
+The transaction authorized to pay through the VAS wallet will carry metadata and the content is the order number in this transaction. Authorized parties can view the information by calling the following command:
+
+```bash
+getrawtransaction "txid" 4 
+```
+
+Use the order number, payment address, and payment amount in this transaction to compare with the data of the authorized party to determine whether the payment was successful (please pay attention to the number of confirmations when judging)
+
+#### 2.2 VAS system sends GET form request to callbakcurl
 
 If the payment is successful and the block is confirmed, a GET form request will be sent to the callbackUrl.
 
@@ -273,7 +287,7 @@ The information that the third-party Dapp needs to return is as follows:
 | errorCode | Error code, if success is true, it can not be returned.      |
 | errorMsg  | Error message, if success is true, it can't be returned.     |
 
-
+It is recommended that the authorized payer check the txid, the payment address, the payment amount, and the order number.
 
 ## Current price inquiry
 
