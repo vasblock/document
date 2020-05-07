@@ -301,7 +301,7 @@ CallbackUrl中携带的参数如下：
 [POST] https://mobile.vasblock.com/vas/server/oauth/pay/price?currency=USD&accessToken=000000
 ```
 
-注意，此处价格为存托池价格非二级市场价格。
+注意，此处价格为二级市场价格加权平均获得。
 
 频率限制：每分钟限10次
 
@@ -310,6 +310,7 @@ CallbackUrl中携带的参数如下：
 | 参数名称    | 参数描述                                    | 是否必填 |
 | ----------- | ------------------------------------------- | -------- |
 | currency    | 币种类型。目前仅支持CNY,USD,EUR,GBP,JPY,KRW | 是       |
+| coinType    | 查询的币种价格，VASUSDT，L-FUSDT ,若不携带此参数，默认为VASUSDT| 否      |
 | accessToken | 接入方accessToken                           | 是       |
 
 返回结果
