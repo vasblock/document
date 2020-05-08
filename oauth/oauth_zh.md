@@ -4,7 +4,7 @@
 
    	用户可在第三方网页或APP中通过VAS授权机制，来获取用户基本信息和接收用户付款，进而实现业务逻辑,共创VAS生态。	
 
-VAS钱包的Scheme为vaswallet Lafi钱包的scheme为lafiwallet，后面以vaswallet距离，对接lafi钱包的直接替换为lafiwallet即可。
+VAS钱包的Scheme为vaswallet Lafi钱包的scheme为lafiwallet，后面以vaswallet举例，对接lafi钱包的直接替换为lafiwallet即可。
 
 ## 申请授权接入
 
